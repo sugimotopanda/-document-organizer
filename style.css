@@ -1,0 +1,35 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --line: #d1d9e0;
+  --link: #0969da;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #9198a1;
+    --line: #3d444d;
+    --link: #4493f8;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", sans-serif;
+  line-height: 1.8;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 8px; }
+h2 { font-size: 1.15rem; margin: 36px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+p, li { overflow-wrap: anywhere; }
+ul, ol { padding-left: 1.4em; }
+a { color: var(--link); }
+.meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 24px; }
+nav { font-size: 0.95rem; margin-bottom: 24px; }
+footer { margin-top: 48px; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+.lead { font-size: 1.1rem; margin: 0 0 4px; }
+footer p { margin: 4px 0; }
